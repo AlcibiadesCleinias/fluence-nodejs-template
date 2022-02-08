@@ -1,5 +1,9 @@
 # Moscow blockchain hackathon tutorial
 
+> this repo is my implementation of origin https://github.com/coder11/fluence-nodejs-template/commits/master
+
+> usefull fluence link on [how to hack](https://www.notion.so/How-to-hack-on-Fluence-97e20ba47ef04df2bfd0c234ee90537d) 
+
 Template for FluenceJS applications running on nodejs.
 
 Useful resources:
