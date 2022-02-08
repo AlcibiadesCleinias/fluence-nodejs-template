@@ -1,0 +1,15 @@
+module Messaging declares MessagingService, sendMyself, sendSomeOne
+
+-- data: MyDataType:
+--     str: string
+--     i: u64
+
+service MessagingService("messaging"):
+    receive_msg(str: string)
+
+func sendMyself(msg: string):
+    MessagingService.receive_msg(msg)
+
+func sendSomeOne(msg: string, peerId: string, relayPeerId: string):
+    on peerId via relayPeerId:
+        MessagingService.receive_msg(msg)
